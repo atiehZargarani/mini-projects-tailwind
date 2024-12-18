@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="">
+    <div class="flex items-center justify-center h-screen bg bg-gray-50 px-10">
+      <div class="bg-white shadow-xl  rounded-xl flex items-center">
+        <!-- main -->
+
+        <div class="flex flex-col space-y-7 p-10">
+          <!-- header -->
+          <div>
+            <h1 class="font-serif text-2xl font-bold mb-3">Log In</h1>
+            <span class="text-gray-500 text-sm">
+              Log in into your account to upload or download pictures,videos and
+              music
+            </span>
+          </div>
+
+          <!-- input -->
+          <div>
+            <input
+              class="w-full border border-gray-300 shadow-sm rounded-sm focus:outline-none p-4"
+              placeholder="enter your email address"
+            />
+          </div>
+
+          <!-- forget pass -->
+          <div>
+            <a href="#" class="text-cyan-700 text-sm"> Forget password? </a>
+          </div>
+          <!-- log in btn -->
+          <div>
+            <button
+              class="bg-cyan-700 w-full p-3 text-lg text-white rounded-md hover:bg-cyan-800"
+            >
+              log in
+            </button>
+          </div>
+          <!-- divider -->
+          <div class="border border-t-graay-300"></div>
+          <!-- another way to login -->
+          <span class="text-gray-400 text-xs text-center">
+            Or log in with
+          </span>
+          <div class="flex flex-row justify-evenly ">
+            <button class="flex items-center space-x-2 border border-gray-300 py-2 px-8 rounded-sm">
+              <img src="./images/google.png" class="h-[30px] w-[30px]"/>
+              <span class="text-gray-700">google</span>
+            </button>
+            <button class="flex items-center space-x-2 border border-gray-300 py-2 px-8 rounded-sm">
+              <img src="./images/facebook.png" class="h-[30px] w-[30px]"/>
+              <span class="text-gray-700">facebook</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- image -->
+        <div class="hidden sm:block">
+          <img src="./images/image.jpg" class=" max-w-[400px]" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
